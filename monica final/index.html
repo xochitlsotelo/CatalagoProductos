@@ -1,0 +1,359 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Mobile: Theme Download</title>
+	<link rel="stylesheet" href="themes/a.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile.structure-1.3.2.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+</head>
+ <body onload="onBodyLoad()">
+        
+  <!-- pagina de Inicio-->
+    <div data-role="page" id="home"  data-theme="a" >
+      <div data-role="header">
+        <div class="ui-btn-left">
+        <a href="#form" data-role="button" data-inline="true" data-icon="plus" data-iconpos="notext">Registrar Producto</a>
+        </div>
+        <h1>Lista de Productos </h1>
+        <div class="ui-btn-right">
+        <a href="#acerca de mi" data-role="button" data-inline="true" data-icon="info" data-iconpos="notext">Acerca de mí</a>
+        </div>
+      </div>
+      <div data-role="content">
+
+        <div data-role="collapsible-set" >
+          <div data-role="collapsible" >
+            <h3>Laptops</h3>
+            <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Buscar..." data-split-icon="edit" >      
+            <li> <a href="#detalle">DELL</a> <a href="#editar"> </a></li>
+            </ul>  
+
+          </div>
+          
+          <div data-role="collapsible" data-collapsed="true" >
+            <h3>mini Laptops</h3>
+            <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Buscar..." data-split-icon="edit">
+             <li> <a href="#detalle">LG</a> <a href="#editar"> </a></li>
+            </ul>
+          </div>
+
+          <div data-role="collapsible" data-collapsed="true">
+            <h3>smarthphones</h3>
+             <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Buscar..." data-split-icon="edit">
+                <li> <a href="#detalle">SAMSUNG</a> <a href="#editar"> </a></li>
+            </ul>
+          </div>
+
+          <div data-role="collapsible" data-collapsed="true">
+            <h3>Tablets</h3>
+            <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Buscar..." data-split-icon="edit">
+             <li> <a href="#detalle">LANIX</a> <a href="#editar"> </a></li>
+            </ul>
+          </div>
+        </div>
+
+         <div data-role="footer" data-position="fixed" data-id="footerPpal">
+    <div data-role="navbar" data-type="horizontal">
+    <ul>    
+    <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+    <li><a href="#form" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+    
+    </ul>
+    </div>
+    
+  </div>
+
+      </div>
+
+
+
+    </div>
+    
+    
+   <!-- detalles de productos-->
+    <div data-role="page" id="detalle"  data-theme="a">
+      <div data-role="header"  data-theme="a">
+          <div class="ui-btn-left">
+            <a href="#" data-role="button" data-inline="true" data-icon="back" data-iconpos="notext" data-rel="back">Volver</a>
+          </div>
+        <h1>Información del producto</h1>
+      </div>
+      <div data-role="content">
+      
+          <h1 align="center" id="categoria">Informacion</h1>
+            <div id="foto"> <p align="center"> <img id="foto_img" src="assets/foto.png" width="256" /> </p>
+            </div>
+        </div>
+      
+      
+        
+        <h2 align="center" id="nombre">sotelo chavez</h2>
+
+        <h3 align="center"> Descripción</h3>
+         <div align="center"><span  id="descripcion">6691591889</span></div>
+         <h3 align="center"> Precio</h3>
+        <div align="center" id="email"><span id="precio">2398748</span> </div>
+
+          <h3 align="center" > Existencia</h3>
+        <div align="center"id="exis"><span id="existencia">4455</span> </div>
+        <h3 align="center"> Fecha de registro </h3>
+        <div align="center" id="fe"><span id="fecha">4444</span> </div>
+
+<div data-role="footer" data-position="fixed" data-id="footerPpal">
+    <div data-role="navbar" data-type="horizontal">
+    <ul>
+    <li><a href="#form" data-rel="back" data-role="button" data-icon="arrow-l">Atras</a></li>
+    <li><a href="#home" data-role="button" data-icon="home">Inicio</a></li>
+    <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+    <li><a href="#acerca de mi" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+    
+    </ul>
+    </div>
+    
+  </div>
+</div>
+
+        </div>
+      
+
+    
+    
+    
+    <!--Editar-->
+     <div data-role="page" id="editar"  data-theme="a">
+      <div data-role="header"  data-theme="a">
+        <div class="ui-btn-left">
+            <a href="#" data-role="button" data-inline="true" data-icon="back" data-iconpos="notext" data-rel="back">Volver</a>
+          </div>
+        <h1>Editar producto</h1>
+      </div>
+      
+           <div data-role="fieldcontain" align="center">
+             <input type="text" name="campoNombre2" id="campoNombre2" value="" placeholder="Nombre del producto" />
+           </div>
+          
+           <div data-role="fieldcontain" align="center">
+             <input type="text" name="campoDescripcion" id="campoDescripcion" value="" placeholder="Descripción" />
+           </div>
+           <div data-role="fieldcontain" align="center">
+             <input type="number" name="campoPrecio2" id="campoPrecio2" value="" placeholder="Precio" />
+           </div>
+           <center>Existencia</center>
+           <div data-role="fieldcontain" align="center">
+             <input type="range" name="campoStock2" id="campoStock2" value="1" min="0" max="100" />
+           </div>
+
+          
+        <center> Fecha de Registro</center>
+         <div data-role="fieldcontain" align="center">
+             <input type="date" name="campoFecha2" id="campoFecha2"  placeholder="Fecha de registro" />
+           </div>
+           
+
+           
+        
+        <button id="b_guardar2">Modificar</button>
+         <button id="b_eliminar">Eliminar producto</button>
+        
+       </div>
+       <div data-role="footer" data-position="fixed" data-id="footerPpal">
+    <div data-role="navbar" data-type="horizontal">
+    <ul>
+    <li><a href="#form" data-rel="back" data-role="button" data-icon="arrow-l">Atras</a></li>
+    <li><a href="#home" data-role="button" data-icon="home">Inicio</a></li>
+    <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+    <li><a href="#acerca de mi" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+    
+    </ul>
+    </div>
+    
+  </div> 
+</div>
+    </div>
+
+
+
+
+    <div data-role="page" id="form"  data-theme="a">
+      <div data-role="header"  data-theme="a">
+        <div class="ui-btn-left">
+            <a href="#" data-role="button" data-inline="true" data-icon="back" data-iconpos="notext" data-rel="back">Volver</a>
+          </div>
+        <h1>Registro de productos</h1>
+      </div>
+       <div data-role="content">
+           <div >
+            <div id="fotoEdit"><a href="#"> 
+            <p align="center"> <img id="fotoEdit_img" src="images/new.png"/></a> </p>
+            </div>
+        </div>
+           <div data-role="fieldcontain" align="center">
+             <input type="text" name="campoNombre" id="campoNombre" value="" placeholder="Nombre del producto" required />
+           </div>
+           
+           <div data-role="fieldcontain" align="center">
+             <input type="text" name="campoDescripcion" id="campoDescripcion" value="" placeholder="Descripción" required />
+           </div>
+           <div data-role="fieldcontain" align="center">
+             <input type="number" name="campoPrecio" id="campoPrecio" value="" placeholder="Precio" required />
+
+            <center>Existencia</center>
+           <div data-role="fieldcontain" align="center">
+             <input type="range" name="campoStock2" id="campoStock2" value="1" min="0" max="100" />
+           </div>
+
+
+           
+        <center> Fecha de Registro</center>
+         <div data-role="fieldcontain" align="center">
+             <input type="date" name="campoFecha" id="campoFecha"  placeholder="Fecha de registro" required />
+           </div>
+           
+
+           
+        
+        <button id="b_guardar">Guardar</button>
+         <a href="#home" data-role="button">Cancelar</a>
+       </div>
+
+<div data-role="footer" data-position="fixed" data-id="footerPpal">
+    <div data-role="navbar" data-type="horizontal">
+    <ul>
+    <li><a href="#home" data-rel="back" data-role="button" data-icon="arrow-l">Atras</a></li>
+    <li><a href="#home" data-role="button" data-icon="home">Inicio</a></li>
+    <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+    <li><a href="#acerca de mi" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+    
+    </ul>
+    </div>
+    
+  </div>
+</div>
+
+    </div>
+    
+    
+   <!-- mails-->
+    <div data-role="page" id="mail_page"  data-theme="b">
+      <div data-role="header"  data-theme="b">
+        <div class="ui-btn-left">
+            <a href="#" data-role="button" data-inline="true" data-icon="back" data-iconpos="notext" data-rel="back">Volver</a>
+          </div>
+        <h1>Email</h1>
+      </div>
+      <div data-role="content">
+        <div data-role="fieldcontain">
+          <input type="text" name="ti_asunto" id="ti_asunto" value="" placeholder="asunto"  />
+        </div>
+        <div data-role="fieldcontain">
+          <textarea cols="40" rows="8" name="ta_body" id="ta_body" placeholder="este es el cuerpo del mensaje..."></textarea>
+        </div>
+        <button id="b_enviar">Enviar</button>
+      </div>
+    </div>
+    
+    
+    <!-- ayuda-->
+    <div data-role="page" id="ayuda" data-theme="a">
+      <div data-role="header">
+        <div class="ui-btn-left">
+            <a href="#" data-role="button" data-inline="true" data-icon="back" data-iconpos="notext" data-rel="back">Volver</a>
+          </div>
+        <h1>Ayuda</h1>
+      </div>
+      <div data-role="content">
+       <ul id="listaAyuda">
+          <li>Usa el + para añadir clientes</li>
+            <li>Con el segundo botón del header podrás añadir clientes a tu catalogo</li>
+            <li>Selecciona la categoría de clientes y podrás verlos</li>
+            <li>Haz click en el ojo para ver los detalles del contacto y para actuar sobre él</li>
+            <li>Haz click sobre la foto del contacto para cambiarla</li>
+            <li>Haz click sobre el botón del teléfono y del mail para actuar</li>
+        </ul>
+      </div>
+    </div>
+
+
+ <!--infomacion -->
+<div data-role="page" id="info"  data-theme="a">
+  <div data-role="header">
+    <h1>Más información</h1>
+  </div>
+  <div data-role="content">
+  <ul>  
+  <li>Aplicación desarrollada mediante PhoneGap para Proyecto Final /Sotelo Chávez Xochitl Julieta/ Junio 2016</li>
+ 
+ </ul>
+ <a href="#" data-rel="back" data-role="button">Cerrar</a>
+ </div>
+  
+</div>
+
+<div data-role="page" id="acerca de mi"  data-theme="a">
+  <div data-role="header">
+
+<!-- acerda de mi -->
+    <h1>Acerca de mí</h1>
+  </div>
+  <center>
+  <div data-role="content" >
+
+  <img src="images/soy_yo.jpg" width="30%"<span>
+    <h1>Nombre:</h1>
+    <h2> XOCHITL JULIETA SOTELO CHAVEZ </h2>
+  </span>
+
+  <span>
+    <h2>Carrera:</h2>
+    <h3> Licenciatura en Ingeniería en Sistemas de Información</h3>
+  </span>
+
+  <span>
+    <h2>Materia:</h2>
+    <h3> Desarrollo de aplicaciones para comercio electrónico</h3>
+  </span>
+
+  <span>
+    <h2>Preferencias:</h2>
+    <h3>
+      
+        <li>
+          ver peliculas
+        </li>
+          
+        <li>
+          fotografia
+        </li>
+          
+        <li>
+          café
+        </li>
+          
+
+       
+    
+    </h3>
+  </span>
+ <a href="#" data-rel="back" data-role="button">Cerrar</a>
+ </div>
+  </center>
+  <div data-role="footer" data-position="fixed" data-id="footerPpal">
+    <div data-role="navbar" data-type="horizontal">
+    <ul>
+    <li><a href="#form" data-rel="back" data-role="button" data-icon="arrow-l">Atras</a></li>
+    <li><a href="#home" data-role="button" data-icon="home">Inicio</a></li>
+    <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+    <li><a href="#info" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+    
+    </ul>
+    </div>
+    
+  </div>
+</div>
+</div>
+
+      
+    </body>
+</html>
