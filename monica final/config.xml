@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.phonegap.xjsc"
+    version   = "1.0.0">
+
+<name>Catalogo Sotelo Chavez</name>
+
+<description>
+Proyecto Final
+</description>
+
+<author href="https://example.com" email="you@example.com">
+Xochitl Sotelo Chavez
+</author>
+
+<icon src="images/soy_yo.jpg" gap:density="ldpi" gap:platform="android" />
+<icon src="images/soy_yo.jpg" gap:density="mdpi" gap:platform="android" />
+<icon src="images/soy_yo.jpg" gap:density="hdpi" gap:platform="android" />
+<icon src="images/soy_yo.jpg" gap:density="xhdpi" gap:platform="android" />
+
+</widget>
